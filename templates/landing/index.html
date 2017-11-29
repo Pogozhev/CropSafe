@@ -1,29 +1,33 @@
 <!--
 
 -->
+{% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>CropSafe | Главная </title>
-<!-- custom-theme -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Viticulture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //custom-theme -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-<!-- font-awesome-icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome-icons -->
-<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<title>CropSafe | Главная </title>
+	<!-- custom-theme -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Viticulture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	
+	
+	<link href={%  static 'land/css/bootstrap.css' %} rel="stylesheet" type="text/css" media="all" />
+	<link href={%  static 'land/css/style.css' %} rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href={%  static 'land/css/flexslider.css' %} type="text/css" media="screen" property="" />
+	<link href={%  static 'land/css/font-awesome.css' %} rel="stylesheet"> 
+	<link href={%  static '//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext' %} rel="stylesheet">
+	<link href={%  static '//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'%} rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="{%  static 'land/js/jquery-2.1.4.min.js' %}"></script>
+	<script type="text/javascript" src="{%  static 'land/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{%  static 'land/js/easing.js' %}"></script>
+	<script src="{%  static 'land/js/bootstrap.js' %}"></script>
+	<script src="{%  static 'land/js/forPage.js' %}"></script>
+	<script defer src="{%  static 'land/js/jquery.flexslider.js' %}"></script>
+
 </head>
 	
 <body>
@@ -35,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- <li><i class="fa fa-phone" aria-hidden="true"></i>+7 906 951 3035</li>
 					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:pao00013@gmail.com">pao00013@gmail.com</a></li> -->
 					<li><i class="fa fa-globe" aria-hidden="true"></i><a href="#">Eng</a></li>
-					<li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="#">log in</a></li>
+					<li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="">to app</a></li>
 				</ul>
 			</div>
 		</div>
@@ -94,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<section>
 					<div class="modal-body">
-						<img src="images/2.jpg" alt=" " class="img-responsive" />
+						<img src="{%  static 'land/images/2.jpg' %}" alt=" " class="img-responsive" />
 						<p>Тут очень много важной информации и очень содержательный текст отражающий всю суть решения
 							<i>" А это цитата довольного пользователя."</i></p>
 					</div>
@@ -110,7 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agileits_banner_bottom_grids">
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect ls_banner_bottom_grid">
-						<img src="images/1.jpg" alt=" " class="img-responsive" />
+						<img src="{%  static 'land/images/1.jpg' %}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						   <h4>Cattle Farm</h4>
 						   <p>Maecenas ullamcor non nunc eget.</p>
@@ -119,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect ls_banner_bottom_grid">
-						<img src="images/2.jpg" alt=" " class="img-responsive" />
+						<img src="{%  static 'land/images/2.jpg' %}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						   <h4>Farming</h4>
 						   <p>Maecenas ullamcor non nunc eget.</p>
@@ -128,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect ls_banner_bottom_grid">
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
+						<img src="{%  static 'land/images/3.jpg' %}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						   <h4>Poultry</h4>
 						   <p>Maecenas ullamcor non nunc eget.</p>
@@ -137,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect ls_banner_bottom_grid">
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
+						<img src="{%  static 'land/images/4.jpg' %}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						   <h4>Gardening</h4>
 						   <p>Maecenas ullamcor non nunc eget.</p>
@@ -160,9 +164,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="slides">
 						<li>
 							<div class="work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<img src="{%  static 'land/images/5.jpg' %}" alt=" " class="img-responsive" />
 								<div class="work_grid_left_pos">
-									<img src="images/6.jpg" alt=" " class="img-responsive" />
+									<img src="{%  static 'land/images/6.jpg' %}" alt=" " class="img-responsive" />
 								</div>
 							</div>
 							<div class="work_grid_right">
@@ -176,9 +180,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li>
 							<div class="work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<img src="{%  static 'land/images/5.jpg' %}" alt=" " class="img-responsive" />
 								<div class="work_grid_left_pos">
-									<img src="images/1.jpg" alt=" " class="img-responsive" />
+									<img src="{%  static 'land/images/1.jpg' %}" alt=" " class="img-responsive" />
 								</div>
 							</div>
 							<div class="work_grid_right">
@@ -192,9 +196,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li>
 							<div class="work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<img src="{%  static 'land/images/5.jpg' %}" alt=" " class="img-responsive" />
 								<div class="work_grid_left_pos">
-									<img src="images/2.jpg" alt=" " class="img-responsive" />
+									<img src="{%  static 'land/images/2.jpg' %}" alt=" " class="img-responsive" />
 								</div>
 							</div>
 							<div class="work_grid_right">
@@ -208,9 +212,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li>
 							<div class="work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<img src="{%  static 'land/images/5.jpg' %}" alt=" " class="img-responsive" />
 								<div class="work_grid_left_pos">
-									<img src="images/3.jpg" alt=" " class="img-responsive" />
+									<img src="{%  static 'land/images/3.jpg' %}" alt=" " class="img-responsive" />
 								</div>
 							</div>
 							<div class="work_grid_right">
@@ -224,9 +228,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<li>
 							<div class="work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
+								<img src="{%  static 'land/images/5.jpg' %}" alt=" " class="img-responsive" />
 								<div class="work_grid_left_pos">
-									<img src="images/7.jpg" alt=" " class="img-responsive" />
+									<img src="{%  static 'land/images/7.jpg' %}" alt=" " class="img-responsive" />
 								</div>
 							</div>
 							<div class="work_grid_right">
@@ -241,19 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 			</section>
-			<!-- flexSlider -->
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-				$(window).load(function(){
-				  $('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-				  });
-				});
-			  </script>
-			<!-- //flexSlider -->
+			
 		</div>	
 	</div>
 <!-- //work -->
@@ -283,7 +275,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-6 wthree_testimoniagrid_left">
 					<div class="ls_testimoniagrid_left_grid">
 						<div class="col-xs-4 agileinfo_testimonials_left">
-							<img src="images/2.png" alt=" " class="img-responsive" />
+							<img src="{%  static 'land/images/2.png' %}" alt=" " class="img-responsive" />
 							<h4>John Crisp</h4>
 							<p>Farmer</p>
 						</div>
@@ -303,7 +295,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 						<div class="col-xs-4 agileinfo_testimonials_left">
-							<img src="images/3.png" alt=" " class="img-responsive" />
+							<img src="{%  static 'land/images/3.png' %}" alt=" " class="img-responsive" />
 							<h4>Thomus Carl</h4>
 							<p>Farmer</p>
 						</div>
@@ -352,36 +344,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //footer -->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
+
+
 <!-- //here ends scrolling icon -->
 </body>
 </html>

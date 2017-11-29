@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def landing(request):
     return render(request, 'landing/index.html', locals())
+
+def dashboard(request):
+    return render(request, 'app/dashboard.php', locals())
