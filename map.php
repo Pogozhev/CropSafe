@@ -23,6 +23,9 @@
   	<form action="#" method="GET"><input type="hidden" name="type" value="cut"><button type="submit">Cut</button></form>
   	<form action="#" method="GET"><input type="hidden" name="type" value="select"><button type="submit">Select</button></form>
     <div id="map"></div>
+    <button onclick="color('red')">Red</button>
+    <button onclick="color('green')">Green</button>
+    <button onclick="color('blue')">Blue</button>
     <script>
     	function cut(){
     		alert('CUT');
@@ -40,10 +43,10 @@
 	            drawingModes: ['polygon']
 	          },
 	          polygonOptions: {
-	            fillColor: '#BCDCF9',
-	            fillOpacity: 0.5,
-	            strokeWeight: 0,
-	            strokeColor: '#57ACF9',
+	            fillColor: 'red',
+	            fillOpacity: 0.8,
+	            strokeWeight: 2,
+	            strokeColor: 'red',
 	            clickable: true,
 	            editable: true,
 	            zIndex: 1
@@ -139,11 +142,12 @@
 		    /* ... */
 		});
       }
+      initMap();
     </script>
     <?php
     	if(isset($_GET['type'])){
 	    	if($_GET['type'] == 'cut'){
-	    		echo '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAU3XOPaAGyJzmNRAggy0mA167K06Cs4k&libraries=drawing&callback=initMap"></script>';
+	    		echo '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAU3XOPaAGyJzmNRAggy0mA167K06Cs4k&libraries=drawing"></script>';
 	    	}
 	    	if($_GET['type'] == 'select'){
 	    		echo '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAU3XOPaAGyJzmNRAggy0mA167K06Cs4k&libraries=drawing&callback=select"></script>';
